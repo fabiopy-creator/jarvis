@@ -1,5 +1,13 @@
 # 🤖 JARVIS-X
 
+# <img src="https://raw.githubusercontent.com/fabiopy-creator/jarvis/main/assets/bot.png" width="50px"> JARVIS-X
+
+<p align="center">
+  <img src="Captura de tela 2026-06-04 182226" alt="Interface do JARVIS-X" width="800px">
+</p>
+Um assistente pessoal desenvolvido em Python com interface gráfica moderna usando CustomTkinter.
+... (resto do seu README) ...
+
 Um assistente pessoal desenvolvido em Python com interface gráfica moderna usando CustomTkinter.
 
 O objetivo do projeto é simular um sistema operacional assistido por IA, oferecendo monitoramento do computador em tempo real, automação de tarefas e integração com inteligência artificial.
