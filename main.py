@@ -19,7 +19,7 @@ except ImportError:
 # ══════════════════════════════════════════════════════════
 #  CONFIGURAÇÃO
 # ══════════════════════════════════════════════════════════
-ANTHROPIC_API_KEY = "sk-ant-api03-XXXXXXXXXXXXXXXXXXXXXXXX"
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "SUA_CHAVE_AQUI")
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
 
