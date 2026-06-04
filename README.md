@@ -11,7 +11,7 @@
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/fabiopy-creator/JARVIS-X.git
+git clone https://github.com/fabiopy-creator/jarvis.git
 ```
 
 ### 2. Entre na pasta do projeto
