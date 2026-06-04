@@ -14,10 +14,10 @@
 git clone https://github.com/fabiopy-creator/jarvis.git
 ```
 
-### 2. Entre na pasta do projeto
+### 2. Entre na pasta
 
 ```bash
-cd JARVIS-X
+cd jarvis
 ```
 
 ### 3. Instale as dependências
@@ -28,12 +28,11 @@ pip install psutil
 pip install anthropic
 ```
 
-### 4. Execute o projeto
+### 4. Execute
 
 ```bash
 python main.py
 ```
-
 🔑 Sobre a IA
 
 O sistema foi desenvolvido para funcionar com a API da Anthropic (Claude).
