@@ -1,7 +1,5 @@
 # 🤖 JARVIS-X
 
-# <img src="https://raw.githubusercontent.com/fabiopy-creator/jarvis/main/assets/bot.png" width="50px">
-
 ## 🖼️ Demonstração do Sistema
 
 <p align="center">
