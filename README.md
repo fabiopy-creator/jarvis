@@ -9,10 +9,8 @@
 ## 🚀 Instalação
 
 ### 1. Clone o repositório
+https://github.com/fabiopy-creator/jarvis
 
-```bash
-git clone https://github.com/fabiopy-creator/jarvis.git
-```
 
 ### 2. Entre na pasta
 
