@@ -13,10 +13,7 @@ https://github.com/fabiopy-creator/jarvis
 
 
 ### 2. Entre na pasta
-
-```bash
 cd jarvis
-```
 
 ### 3. Instale as dependências
 
