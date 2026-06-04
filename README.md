@@ -1,19 +1,90 @@
-# 🤖 JARVIS-X JARVIS-X é um assistente pessoal desenvolvido em Python com interface gráfica moderna utilizando CustomTkinter. O projeto foi criado com o objetivo de simular um sistema operacional assistido por IA, oferecendo monitoramento em tempo real do computador, automação de tarefas e integração com modelos de inteligência artificial. 
-### ✨ Funcionalidades = 🖥️ Monitoramento do Sistema - Uso de CPU em tempo real - Uso de RAM em tempo real - Uso de Disco em tempo real - Relógio integrado
-### 🌐 Automação Web - Abrir Google - Abrir YouTube - Abrir GitHub - Abrir ChatGPT - Abrir Spotify - Abrir Gmail - Abrir LinkedIn - Abrir Claude ### 
-### ⚙️ Automação do Windows - Abrir Notepad - Abrir Calculadora - Abrir Explorer - Abrir CMD - Abrir Paint - Abrir Gerenciador de Tarefas ### 
-### 📂 Organização de Arquivos - Organiza automaticamente a pasta Downloads - Separa imagens, vídeos, documentos, programas e código ### 
-### 🗃️ Histórico - Armazena comandos e respostas em SQLite - Permite consultar os últimos comandos executados ### 
-### 🧠 Inteligência Artificial - Integração com Anthropic Claude - Respostas conversacionais diretamente pela interface --- ## 
-### 📸 Interface O projeto possui uma interface inspirada em assistentes futuristas, com: - Tema escuro - Painel de status do sistema - Terminal integrado - Design inspirado no JARVIS da Marvel --- ## 
+# 🤖 JARVIS-X
+
+Um assistente pessoal desenvolvido em Python com interface gráfica moderna usando CustomTkinter.
+
+O objetivo do projeto é simular um sistema operacional assistido por IA, oferecendo monitoramento do computador em tempo real, automação de tarefas e integração com inteligência artificial.
+
+---
+
+## 🔗 Repositório
+
+https://github.com/fabiopy-creator/jarvis
+
+---
+
+## ✨ Funcionalidades
+
+### 🖥️ Monitoramento do Sistema
+- Uso de CPU em tempo real
+- Uso de RAM em tempo real
+- Uso de Disco em tempo real
+- Relógio integrado
+
+### 🌐 Automação Web
+- Abrir Google
+- Abrir YouTube
+- Abrir GitHub
+- Abrir ChatGPT
+- Abrir Spotify
+- Abrir Gmail
+- Abrir LinkedIn
+- Abrir Claude
+
+### ⚙️ Automação do Windows
+- Abrir Notepad
+- Abrir Calculadora
+- Abrir Explorer
+- Abrir CMD
+- Abrir Paint
+- Abrir Gerenciador de Tarefas
+
+### 📂 Organização de Arquivos
+- Organiza automaticamente a pasta Downloads
+- Separa arquivos por categoria:
+  - Imagens
+  - Vídeos
+  - Documentos
+  - Programas
+  - Código
+  - Compactados
+
+### 🗃️ Histórico
+- Armazenamento em SQLite
+- Registro de comandos executados
+- Consulta dos últimos comandos
+
+### 🧠 Inteligência Artificial
+- Integração com Anthropic Claude
+- Respostas diretamente pela interface
+- Execução assíncrona para não travar a aplicação
+
+---
+
+## 📸 Interface
+
+O projeto possui uma interface inspirada em assistentes futuristas:
+
+- Tema escuro
+- Painel lateral de monitoramento
+- Terminal integrado
+- Status em tempo real
+- Layout estilo JARVIS
+
+---
+
 ## 🚀 Instalação
 
 ### 1. Clone o repositório
-https://github.com/fabiopy-creator/jarvis
 
+```bash
+git clone https://github.com/fabiopy-creator/jarvis.git
+```
 
-### 2. Entre na pasta
+### 2. Entre na pasta do projeto
+
+```bash
 cd jarvis
+```
 
 ### 3. Instale as dependências
 
@@ -23,24 +94,114 @@ pip install psutil
 pip install anthropic
 ```
 
-### 4. Execute
+### 4. Execute o projeto
 
 ```bash
 python main.py
 ```
-🔑 Sobre a IA
 
-O sistema foi desenvolvido para funcionar com a API da Anthropic (Claude).
+---
+
+## ⌨️ Comandos Disponíveis
+
+### Abrir Sites
+
+```text
+abrir google
+abrir youtube
+abrir github
+abrir chatgpt
+abrir spotify
+abrir gmail
+abrir linkedin
+abrir claude
+```
+
+### Abrir Programas
+
+```text
+abrir notepad
+abrir calc
+abrir explorer
+abrir cmd
+abrir paint
+abrir taskmgr
+abrir word
+abrir excel
+abrir powerpoint
+```
+
+### Utilidades
+
+```text
+status
+historico
+limpar
+organizar downloads
+criar pasta MeuProjeto
+```
+
+---
+
+## 🔑 Configuração da IA
+
+A funcionalidade de IA utiliza a API da Anthropic (Claude).
 
 Por motivos de segurança, nenhuma chave de API é fornecida neste repositório.
 
-Sem uma chave válida da Anthropic, o projeto continuará funcionando parcialmente, mantendo disponíveis:
+Sem uma chave válida, o sistema continuará funcionando normalmente com:
 
-✅ Interface gráfica
-✅ Monitoramento do sistema
-✅ Automação de sites
-✅ Automação do Windows
-✅ Organização de Downloads
-✅ Histórico SQLite
+✅ Interface gráfica  
+✅ Monitoramento do sistema  
+✅ Automação de sites  
+✅ Automação do Windows  
+✅ Organização de Downloads  
+✅ Histórico SQLite  
 
-A funcionalidade de conversa com IA ficará indisponível até que uma chave válida seja configurada.
+A única funcionalidade indisponível será a conversa com IA.
+
+Para habilitar a IA, substitua:
+
+```python
+ANTHROPIC_API_KEY = "SUA_CHAVE_AQUI"
+```
+
+por sua chave válida da Anthropic.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Python
+- CustomTkinter
+- SQLite
+- Psutil
+- Anthropic API
+- Threading
+
+---
+
+## 🎯 Objetivos do Projeto
+
+Este projeto foi desenvolvido para praticar:
+
+- Automação com Python
+- Interfaces gráficas
+- Banco de dados SQLite
+- Integração com APIs
+- Organização de código
+- Desenvolvimento de aplicações desktop
+
+---
+
+## ⚠️ Aviso
+
+Este projeto foi desenvolvido para fins de estudo e portfólio.
+
+Algumas funcionalidades dependem de softwares instalados no Windows e da disponibilidade de uma chave válida da Anthropic.
+
+---
+
+## 📄 Licença
+
+Este projeto é aberto para fins educacionais e aprendizado.
