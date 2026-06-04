@@ -6,7 +6,7 @@
 ### 🗃️ Histórico - Armazena comandos e respostas em SQLite - Permite consultar os últimos comandos executados ### 
 ### 🧠 Inteligência Artificial - Integração com Anthropic Claude - Respostas conversacionais diretamente pela interface --- ## 
 ### 📸 Interface O projeto possui uma interface inspirada em assistentes futuristas, com: - Tema escuro - Painel de status do sistema - Terminal integrado - Design inspirado no JARVIS da Marvel --- ## 
-### 🚀 Instalação Clone o repositório: ```bash  ```bash git clone https://github.com/SEU-USUARIO/JARVIS-X.git cd JARVIS-X,nstale as dependências:
+### 🚀 Instalação Clone o repositório: ```bash  ```bash git clone https:/git clone https://github.com/fabiopy-creator/JARVIS-X.git cd JARVIS-X,nstale as dependências:
 
 pip install customtkinter
 pip install psutil
