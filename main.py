@@ -206,6 +206,36 @@ def responder(texto):
     saida.insert("end", f"{texto}\n")
     saida.see("end")
 
+def organizar_downloads():
+    path_downloads = Path.home() / "Downloads"
+    
+    categorias = {
+        "Imagens": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"],
+        "Vídeos": [".mp4", ".mkv", ".avi", ".mov"],
+        "Documentos": [".pdf", ".docx", ".txt", ".xlsx", ".pptx", ".csv"],
+        "Programas": [".exe", ".msi"],
+        "Código": [".py", ".html", ".css", ".js", ".json"],
+        "Compactados": [".zip", ".rar", ".7z"]
+    }
+    
+    arquivos_movidos = 0
+    
+    for item in path_downloads.iterdir():
+        if item.is_file():
+            ext = item.suffix.lower()
+            for pasta, extensoes in categorias.items():
+                if ext in extensoes:
+                    pasta_destino = path_downloads / pasta
+                    pasta_destino.mkdir(exist_ok=True)
+                    try:
+                        shutil.move(str(item), str(pasta_destino / item.name))
+                        arquivos_movidos += 1
+                    except Exception:
+                        pass
+                    break
+
+    responder(f"[JARVIS] Downloads organizados. {arquivos_movidos} arquivos movidos.")
+
 def perguntar_ia(pergunta):
     if not IA_DISPONIVEL:
         return "[JARVIS] 'anthropic' não encontrada no sistema."
@@ -257,7 +287,9 @@ def executar():
 
     saida.insert("end", f"> {comando}\n")
 
-    if cmd_low in SITES:
+    if cmd_low in ("organizar downloads", "organizar pasta downloads"):
+        organizar_downloads()
+    elif cmd_low in SITES:
         webbrowser.open(SITES[cmd_low])
         responder(f"[JARVIS] Abrindo: {cmd_low.replace('abrir ', '')}")
     elif cmd_low in PROGRAMAS_WINDOWS:
