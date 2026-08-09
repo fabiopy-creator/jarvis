@@ -75,14 +75,6 @@ O projeto possui uma interface inspirada em uma estética monocromática e melan
 - Status em tempo real
 - Layout retilíneo sem cantos arredondados
 
----
-
-## 🚀 Instalação
-
-### 1. Clone o repositório
-
-```bash
-git clone [https://github.com/fabiopy-creator/jarvis.git](https://github.com/fabiopy-creator/jarvis.git)
 
 🔑 Configuração da IA
 A funcionalidade de IA utiliza a API da Anthropic (Claude).
@@ -129,3 +121,11 @@ Algumas automações dependem de softwares instalados nativamente no ecossistema
 
 📄 Licença
 Este projeto é aberto para fins educacionais e aprendizado.
+---
+
+## 🚀 Instalação
+
+### 1. Clone o repositório
+
+```bash
+git clone [https://github.com/fabiopy-creator/jarvis.git](https://github.com/fabiopy-creator/jarvis.git)
