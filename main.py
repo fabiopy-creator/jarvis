@@ -206,9 +206,11 @@ def responder(texto):
     saida.insert("end", f"{texto}\n")
     saida.see("end")
 
-def organizar_downloads():
-    path_downloads = Path.home() / "Downloads"
-    
+def organizar_pasta(caminho_pasta, nome_exibicao):
+    if not caminho_pasta.exists():
+        responder(f"[JARVIS] Pasta {nome_exibicao} não encontrada.")
+        return
+
     categorias = {
         "Imagens": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"],
         "Vídeos": [".mp4", ".mkv", ".avi", ".mov"],
@@ -220,12 +222,12 @@ def organizar_downloads():
     
     arquivos_movidos = 0
     
-    for item in path_downloads.iterdir():
+    for item in caminho_pasta.iterdir():
         if item.is_file():
             ext = item.suffix.lower()
             for pasta, extensoes in categorias.items():
                 if ext in extensoes:
-                    pasta_destino = path_downloads / pasta
+                    pasta_destino = caminho_pasta / pasta
                     pasta_destino.mkdir(exist_ok=True)
                     try:
                         shutil.move(str(item), str(pasta_destino / item.name))
@@ -234,7 +236,7 @@ def organizar_downloads():
                         pass
                     break
 
-    responder(f"[JARVIS] Downloads organizados. {arquivos_movidos} arquivos movidos.")
+    responder(f"[JARVIS] {nome_exibicao} organizado(a). {arquivos_movidos} arquivos movidos.")
 
 def perguntar_ia(pergunta):
     if not IA_DISPONIVEL:
@@ -288,7 +290,9 @@ def executar():
     saida.insert("end", f"> {comando}\n")
 
     if cmd_low in ("organizar downloads", "organizar pasta downloads"):
-        organizar_downloads()
+        organizar_pasta(Path.home() / "Downloads", "Downloads")
+    elif cmd_low in ("organizar desktop", "organizar area de trabalho", "organizar área de trabalho"):
+        organizar_pasta(Path.home() / "Desktop", "Área de Trabalho")
     elif cmd_low in SITES:
         webbrowser.open(SITES[cmd_low])
         responder(f"[JARVIS] Abrindo: {cmd_low.replace('abrir ', '')}")
