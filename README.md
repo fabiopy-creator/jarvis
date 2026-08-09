@@ -2,11 +2,9 @@
 
 ## 🖼️ Demonstração do Sistema
 
-<p align="center">
-  <img src="./jarvis.png" alt="Interface do JARVIS-X" width="800px">
-</p>
+![Interface do JARVIS-X](jarvis.png)
 
-Um assistente pessoal desenvolvido em Python com interface gráfica moderna usando CustomTkinter.
+Um assistente pessoal desenvolvido em Python com interface gráfica moderna e minimalista usando CustomTkinter.
 
 O objetivo do projeto é simular um sistema operacional assistido por IA, oferecendo monitoramento do computador em tempo real, automação de tarefas e integração com inteligência artificial.
 
@@ -68,13 +66,13 @@ https://github.com/fabiopy-creator/jarvis
 
 ## 📸 Interface
 
-O projeto possui uma interface inspirada em assistentes futuristas:
+O projeto possui uma interface inspirada em uma estética monocromática e melancólica (Void / Hollow Knight):
 
-- Tema escuro
-- Painel lateral de monitoramento
-- Terminal integrado
+- Tema escuro e minimalista em preto e branco osso
+- Painel lateral de monitoramento direto (CPU, RAM, DISK)
+- Terminal integrado limpo
 - Status em tempo real
-- Layout estilo JARVIS
+- Layout retilíneo sem cantos arredondados
 
 ---
 
@@ -83,131 +81,4 @@ O projeto possui uma interface inspirada em assistentes futuristas:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/fabiopy-creator/jarvis.git
-```
-
-### 2. Entre na pasta do projeto
-
-```bash
-cd jarvis
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install customtkinter
-pip install psutil
-pip install anthropic
-```
-
-### 4. Execute o projeto
-
-```bash
-python main.py
-```
-
----
-
-## ⌨️ Comandos Disponíveis
-
-### Abrir Sites
-
-```text
-abrir google
-abrir youtube
-abrir github
-abrir chatgpt
-abrir spotify
-abrir gmail
-abrir linkedin
-abrir claude
-```
-
-### Abrir Programas
-
-```text
-abrir notepad
-abrir calc
-abrir explorer
-abrir cmd
-abrir paint
-abrir taskmgr
-abrir word
-abrir excel
-abrir powerpoint
-```
-
-### Utilidades
-
-```text
-status
-historico
-limpar
-organizar downloads
-criar pasta MeuProjeto
-```
-
----
-
-## 🔑 Configuração da IA
-
-A funcionalidade de IA utiliza a API da Anthropic (Claude).
-
-Por motivos de segurança, nenhuma chave de API é fornecida neste repositório.
-
-Sem uma chave válida, o sistema continuará funcionando normalmente com:
-
-✅ Interface gráfica  
-✅ Monitoramento do sistema  
-✅ Automação de sites  
-✅ Automação do Windows  
-✅ Organização de Downloads  
-✅ Histórico SQLite  
-
-A única funcionalidade indisponível será a conversa com IA.
-
-Para habilitar a IA, substitua:
-
-```python
-ANTHROPIC_API_KEY = "SUA_CHAVE_AQUI"
-```
-
-por sua chave válida da Anthropic.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- Python
-- CustomTkinter
-- SQLite
-- Psutil
-- Anthropic API
-- Threading
-
----
-
-## 🎯 Objetivos do Projeto
-
-Este projeto foi desenvolvido para praticar:
-
-- Automação com Python
-- Interfaces gráficas
-- Banco de dados SQLite
-- Integração com APIs
-- Organização de código
-- Desenvolvimento de aplicações desktop
-
----
-
-## ⚠️ Aviso
-
-Este projeto foi desenvolvido para fins de estudo e portfólio.
-
-Algumas funcionalidades dependem de softwares instalados no Windows e da disponibilidade de uma chave válida da Anthropic.
-
----
-
-## 📄 Licença
-
-Este projeto é aberto para fins educacionais e aprendizado.
+git clone [https://github.com/fabiopy-creator/jarvis.git](https://github.com/fabiopy-creator/jarvis.git)
