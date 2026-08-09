@@ -6,7 +6,7 @@
 
 Um assistente pessoal desenvolvido em Python com interface gráfica moderna e minimalista usando CustomTkinter.
 
-O objetivo do projeto é simular um sistema operacional assistido por IA, oferecendo monitoramento do computador em tempo real, automação de tarefas e integração com inteligência artificial.
+O objetivo do projeto é simular um sistema operacional assistido por IA, oferecendo monitoramento do computador em tempo real, automação de tarefas e suporte a inteligência artificial (mediante chave do usuário).
 
 ---
 
@@ -42,9 +42,10 @@ https://github.com/fabiopy-creator/jarvis
 - Abrir Paint
 - Abrir Gerenciador de Tarefas
 
-### 📂 Organização de Arquivos
+### 📂 Organização Dinâmica de Arquivos
+- Função genérica `organizar_pasta()` aplicável a múltiplos diretórios
 - Organiza automaticamente as pastas **Downloads** e **Área de Trabalho (Desktop)**
-- Separa arquivos por categoria:
+- Separa os arquivos por categoria criando subpastas:
   - Imagens
   - Vídeos
   - Documentos
@@ -57,10 +58,10 @@ https://github.com/fabiopy-creator/jarvis
 - Registro de comandos executados
 - Consulta dos últimos comandos
 
-### 🧠 Inteligência Artificial
-- Integração com Anthropic Claude
-- Respostas diretamente pela interface
-- Execução assíncrona para não travar a aplicação
+### 🧠 Inteligência Artificial (Opcional)
+- **Suporte para integração com Anthropic Claude (Requer API Key do próprio usuário)**
+- Respostas personalizadas diretamente na interface gráfica
+- Execução assíncrona (threading) para não travar a aplicação
 
 ---
 
@@ -82,3 +83,49 @@ O projeto possui uma interface inspirada em uma estética monocromática e melan
 
 ```bash
 git clone [https://github.com/fabiopy-creator/jarvis.git](https://github.com/fabiopy-creator/jarvis.git)
+
+🔑 Configuração da IA
+A funcionalidade de IA utiliza a API da Anthropic (Claude).
+
+Por motivos de segurança e custos, nenhuma chave de API é fornecida neste repositório.
+
+Sem uma chave configurada, o assistente funcionará perfeitamente e 100% offline em todas as automações.
+
+🛠️ Tecnologias Utilizadas
+Python
+
+CustomTkinter
+
+SQLite
+
+Psutil
+
+Anthropic API
+
+Threading
+
+Pathlib / Shutil
+
+🎯 Objetivos do Projeto
+Este projeto foi desenvolvido para praticar:
+
+Automação e manipulação de arquivos do sistema com Python
+
+Interfaces gráficas modernas com CustomTkinter
+
+Banco de dados SQLite
+
+Integração com APIs externas
+
+Programação assíncrona (Threading)
+
+Organização e arquitetura de código
+
+
+⚠️ Aviso
+Este projeto foi desenvolvido para fins de estudo e portfólio.
+
+Algumas automações dependem de softwares instalados nativamente no ecossistema Windows e da inclusão de uma chave própria da Anthropic para respostas via Claude.
+
+📄 Licença
+Este projeto é aberto para fins educacionais e aprendizado.
