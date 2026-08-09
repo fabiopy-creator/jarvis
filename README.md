@@ -3,7 +3,7 @@
 ## 🖼️ Demonstração do Sistema
 
 <p align="center">
-  <img src="./jarvis.png.png" alt="Interface do JARVIS-X" width="800px">
+  <img src="./jarvis.png" alt="Interface do JARVIS-X" width="800px">
 </p>
 
 Um assistente pessoal desenvolvido em Python com interface gráfica moderna usando CustomTkinter.
