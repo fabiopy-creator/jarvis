@@ -43,7 +43,7 @@ https://github.com/fabiopy-creator/jarvis
 - Abrir Gerenciador de Tarefas
 
 ### 📂 Organização de Arquivos
-- Organiza automaticamente a pasta Downloads
+- Organiza automaticamente as pastas **Downloads** e **Área de Trabalho (Desktop)**
 - Separa arquivos por categoria:
   - Imagens
   - Vídeos
