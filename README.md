@@ -4,7 +4,7 @@
 
 ![Interface do JARVIS-X](jarvis.png)
 
-Um assistente pessoal desenvolvido em Python com interface gráfica moderna e minimalista usando CustomTkinter.
+Um assistente pessoal desenvolvido em Python com interface gráfica moderna e minimalista usando **CustomTkinter**.
 
 O objetivo do projeto é simular um sistema operacional assistido por IA, oferecendo monitoramento do computador em tempo real, automação de tarefas e suporte a inteligência artificial (mediante chave do usuário).
 
@@ -12,7 +12,7 @@ O objetivo do projeto é simular um sistema operacional assistido por IA, oferec
 
 ## 🔗 Repositório
 
-https://github.com/fabiopy-creator/jarvis
+[https://github.com/fabiopy-creator/jarvis](https://github.com/fabiopy-creator/jarvis)
 
 ---
 
@@ -67,7 +67,7 @@ https://github.com/fabiopy-creator/jarvis
 
 ## 📸 Interface
 
-O projeto possui uma interface inspirada em uma estética monocromática e melancólica (Void / Hollow Knight):
+O projeto possui uma interface inspirada em uma estética monocromática e melancólica (*Void / Hollow Knight*):
 
 - Tema escuro e minimalista em preto e branco osso
 - Painel lateral de monitoramento direto (CPU, RAM, DISK)
@@ -75,57 +75,24 @@ O projeto possui uma interface inspirada em uma estética monocromática e melan
 - Status em tempo real
 - Layout retilíneo sem cantos arredondados
 
-
-🔑 Configuração da IA
-A funcionalidade de IA utiliza a API da Anthropic (Claude).
-
-Por motivos de segurança e custos, nenhuma chave de API é fornecida neste repositório.
-
-Sem uma chave configurada, o assistente funcionará perfeitamente e 100% offline em todas as automações.
-
-🛠️ Tecnologias Utilizadas
-Python
-
-CustomTkinter
-
-SQLite
-
-Psutil
-
-Anthropic API
-
-Threading
-
-Pathlib / Shutil
-
-🎯 Objetivos do Projeto
-Este projeto foi desenvolvido para praticar:
-
-Automação e manipulação de arquivos do sistema com Python
-
-Interfaces gráficas modernas com CustomTkinter
-
-Banco de dados SQLite
-
-Integração com APIs externas
-
-Programação assíncrona (Threading)
-
-Organização e arquitetura de código
-
-
-⚠️ Aviso
-Este projeto foi desenvolvido para fins de estudo e portfólio.
-
-Algumas automações dependem de softwares instalados nativamente no ecossistema Windows e da inclusão de uma chave própria da Anthropic para respostas via Claude.
-
-📄 Licença
-Este projeto é aberto para fins educacionais e aprendizado.
 ---
 
-## 🚀 Instalação
+## 🔑 Configuração da IA
 
-### 1. Clone o repositório
+A funcionalidade de IA utiliza a API da Anthropic (Claude).
 
-```bash
-git clone [https://github.com/fabiopy-creator/jarvis.git](https://github.com/fabiopy-creator/jarvis.git)
+Por motivos de segurança e custos, **nenhuma chave de API é fornecida neste repositório**.
+
+Sem uma chave configurada, o assistente funcionará perfeitamente e 100% offline em todas as automações:
+
+✅ Interface gráfica  
+✅ Monitoramento do sistema em tempo real  
+✅ Automação de sites  
+✅ Automação de aplicativos Windows  
+✅ Organização de arquivos (Downloads e Área de Trabalho)  
+✅ Banco de Dados e Histórico SQLite  
+
+A única função desabilitada será o chat generativo com a IA. Para ativar a IA, defina a variável de ambiente no seu sistema ou configure no código:
+
+```python
+ANTHROPIC_API_KEY = "SUA_CHAVE_AQUI"
